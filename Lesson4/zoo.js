@@ -47,30 +47,25 @@ function deleteObjectFromArray (animals) {
     animals.splice (index,1);
 }
 
-function addObjectToArray () {
-    let name = prompt ('Введите имя животного.');
-    let animalSpecies = prompt ('Введите вид животного.');
-    let animalAge = prompt ('Введите возраст животного.');
-    let animalHealth = prompt ('Если животное в порядке - введите "true", если нет - "false".');
-    let animalStatus = prompt ('Где находится животное?');
-    let animalWarden = prompt ('Введите имя смотрителя.');
-    let newAnimal = {
-        isName: name,
-        species: animalSpecies,
-        age: animalAge,
-        isHealthy: animalHealth,
-        status: animalStatus,
-        wardenName: animalWarden,  
+addObjectToArray (animalInfo = { animalName: '', animalSpecies: '', animalAge: '', animalHealth: '', animalStatus: '', animalWarden:''});
+
+function addObjectToArray (animalInfo) {
+      let newAnimal = {
+        isName: animalInfo.animalName,
+        species: animalInfo.animalSpecies,
+        age: animalInfo.animalAge,
+        isHealthy: animalInfo.animalHealth,
+        status: animalInfo.animalStatus,
+        wardenName: animalInfo.animalWarden,  
     };
     animals.push(newAnimal)
 }
 
-function addFeatureToArray () {
-    let animalName = prompt ('Введите имя животного.');
-    let propertyName = prompt ('Введите параметр, который хотите добавить.');
-    let propertyValue = prompt ('Введите содержание парметра.');
-    let index = getObjectIndexByName(animalName);
-    animals[index][propertyName] = propertyValue;
+addPropertyToArray (animalProperty = {animalName: '', propertyName: '', propertyValue:''});
+
+function addPropertyToArray (animalProperty) {
+    let index = getObjectIndexByName(animalProperty.animalName);
+    animals[index][animalProperty.propertyName] = animalProperty.propertyValue;
 }
 
 function getObjectIndexByName (animalName) {
