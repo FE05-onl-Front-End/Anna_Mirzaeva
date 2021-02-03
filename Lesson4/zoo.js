@@ -50,15 +50,9 @@ function deleteObjectFromArray (animals) {
 addObjectToArray (animalInfo = { animalName: '', animalSpecies: '', animalAge: '', animalHealth: '', animalStatus: '', animalWarden:''});
 
 function addObjectToArray (animalInfo) {
-      let newAnimal = {
-        isName: animalInfo.animalName,
-        species: animalInfo.animalSpecies,
-        age: animalInfo.animalAge,
-        isHealthy: animalInfo.animalHealth,
-        status: animalInfo.animalStatus,
-        wardenName: animalInfo.animalWarden,  
-    };
-    animals.push(newAnimal)
+    const { isName, species, age, status, wardenName } = animalInfo
+    animals.push(animalInfo)
+    alert(`Животное ${isName} вида ${species} возраста ${age} находтся в состоянии ${status} под наблюдением ${wardenName}`)
 }
 
 addPropertyToArray (animalProperty = {animalName: '', propertyName: '', propertyValue:''});
