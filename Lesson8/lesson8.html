@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="paintstyle.css">
+  <script src="paint.js"></script>
+  <title>Lesson_8</title>
+</head>
+
+<body>
+<h1>Paint</h1>
+<div class="wrapper">
+  <select class="select-figure" id="figure" onchange="figureChanged()">
+    <option value=""></option>
+    <option value="triangle">Triangle</option>
+    <option value="rectangle">Rectangle</option>
+    <option value="square">Square</option>
+    <option value="oval">Oval</option>
+    <option value="circle">Circle</option>
+  </select>
+
+  <div class="palette">
+    <div class="palette-green" onclick="setBackground('green')"></div>
+    <div class="palette-red" onclick="setBackground('red')"></div>
+    <div class="palette-black" onclick="setBackground('black')"></div>
+    <div class="palette-blue" onclick="setBackground('blue')"></div>
+    <div class="palette-purple" onclick="setBackground('purple')"></div>
+    <button class="palette-white" onclick="setBackground('white')">Reset Color</button>
+  </div>
+</div>
+
+  <div class="empty-element">
+    <div id="element">
+      <div id="empty" class="empty"></div>
+    </div>
+  </div>
+</body>
+
+</html>
