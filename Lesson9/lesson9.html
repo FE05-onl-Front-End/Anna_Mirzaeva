@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+<body onclick="closeForm(event)">
+<div id="modal" class="modal">
+    <!-- В стилях display.none, удалите, чтобы увидеть -->
+    <div class="popap">
+        <div class="popap-head">
+            <div class="close" onclick="closeForm(event)">X</div>
+        </div>
+        <div class="popap-main">
+            <form class="popap-form">
+                <label>
+                    <span>First Name</span>
+                    <input onchange="validateInputHandler(event)" type="text" name="first-name">
+                </label>
+                <label>
+                    <span>Last Name</span>
+                    <input onchange="validateInputHandler(event)" type="text" name="last-name">
+                </label>
+                <label>
+                    <span>Age</span>
+                    <input onchange="validateInputHandler(event)" type="text" name="age">
+                </label>
+            </form>
+            <div class="popap-btn">
+                <div class="btn close" onclick="closeForm(event)">close</div>
+                <div class="btn ok" onclick="submit(event)">ok</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="addUser" class="btn add-user">add user</div>
+
+<table class="person-table" id="item">
+  <tr class="table-row">
+   <th class="table-column">First Name</th>
+   <th class="table-column">Last Name</th>
+   <th class="table-column">Age</th>
+  </tr>
+ </table>
+ <script src="lesson9.js"></script>
+</body>
+</html>

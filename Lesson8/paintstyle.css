@@ -1,0 +1,113 @@
+#element {
+    margin-top: 20px;
+  }
+
+  h1 {
+      text-align: center;
+      text-transform: uppercase;
+  }
+
+  .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .select-figure {
+      display: flex;
+      margin: 30px;
+  }
+
+  .palette {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .rectangle {
+    width: 200px;
+    height: 100px;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%
+  }
+  
+  .oval {
+    width: 200px;
+    height: 100px;
+    border-radius: 100px / 50px;
+  }
+  
+  .triangle {
+      width: 0; 
+      height: 0; 
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+  }
+  
+  .triangle .empty {
+      position: absolute;
+      top: 252.5px;
+      left:721px;
+      width:0;
+      border-bottom:solid 47px white;
+      border-right:solid 47px transparent;
+      border-left:solid 47px transparent;
+  }
+
+  .palette-green {
+      width: 50px;
+      height: 50px;
+      padding: 20px;
+      background-color: green;
+      border: white solid 5px;
+  }
+
+  .palette-red {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    background-color: red;
+    border: white solid 5px;
+  }
+
+  .palette-black {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    background-color: black;
+    border: white solid 5px;
+  }
+
+  .palette-blue {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    background-color: blue;
+    border: white solid 5px;
+  }
+
+  .palette-purple {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    background-color: purple;
+    border: white solid 5px;
+  }
+
+  .palette-white {
+
+  }
+
+  .empty-element {
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+  }
