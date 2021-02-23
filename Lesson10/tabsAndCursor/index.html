@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Lesson10</title>
+</head>
+<body>
+    <script src="lesson10.js"></script>
+    <section class="tabs-block">
+        <div class="container">
+            <div id="tabs" class="tabs">
+                <div onclick="openIcon('first-tab')" class="first-tab">Tab 1<span onclick="removeBlock(event)" class="close">x</span></div>
+                <div onclick="openIcon('second-tab')" class="second-tab">Tab 2<span onclick="removeBlock(event)" class="close">x</span></div>
+                <div onclick="openIcon('third-tab')" class="third-tab">Tab 3<span onclick="removeBlock(event)" class="close">x</span></div>
+            </div>
+            <div class="tab-content">
+                <i id="first-tab" class="icon fab fa-facebook-f"></i>
+                <i id="second-tab" class="icon fab fa-twitter"></i>
+                <i id="third-tab"class="icon fab fa-linkedin"></i>
+            </div>
+        </div>
+    </section>
+    <div id="mouse-circle"></div>
+</body>
+</html>

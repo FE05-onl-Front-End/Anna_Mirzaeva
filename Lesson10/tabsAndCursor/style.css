@@ -1,0 +1,90 @@
+* {
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 50px;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first-tab,
+.second-tab,
+.third-tab {
+    display: flex;
+    height: 50px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: cadetblue;
+    border: cadetblue solid 1px;
+    background-color: rgb(17, 17, 17);
+}
+
+.first-tab:hover,
+.second-tab:hover,
+.third-tab:hover {
+    color: rgb(17, 17, 17);
+    background-color: cadetblue;
+}
+
+.tab-content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    color: cadetblue;
+    font-size: 500px;
+}
+
+#mouse-circle {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    border: 1px solid #0f1c64;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+#first-tab {
+    display: none;
+}
+
+#second-tab {
+    display: none;
+}
+
+#third-tab {
+    display: none;
+}
+
+.close {
+    height: 15px;
+    width: 15px;
+    color: #ffffff;
+    background-color: cadetblue;
+    border: cadetblue solid 1px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 12px;
+    position: relative;
+    top: -15px;
+    left: 43px;
+}
+
+.close:hover {
+    background-color: black
+}
